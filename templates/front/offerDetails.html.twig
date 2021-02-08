@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block title %}Le bon job! - Details{% endblock %}
+{% block pageTitle %}Détail d'offre{% endblock %}
+{% block body %}
+
+    <h2>{{ offer.reference }} </h2>
+    <h3>{{ offer.company }}</h3>
+    <h4>{{ offer.department }} {{ offer.city }} {{ offer.zipcode }}</h4>
+    <h5>- {{ offer.description }}</h5>
+    <h4>{{ offer.contact_email }}</h4>
+
+{% endblock %}

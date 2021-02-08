@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %}Le bon job! - Offres{% endblock %}
+{% block pageTitle %}Offres{% endblock %}
+{% block body %}
+    <ul id="listeOffers">
+        {%  for offer in offers %}
+            <li>{{ offer.reference }} - {{ offer.company }} {{ offer.city }} - {{ offer.contact_email }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,6 @@
+<footer class="footer mt-auto py-3 bg-dark ">
+{% for i in 1..93 %}
+
+    <a href="/offers/department-{{ "%02d" | format(i) }}">{{ "%02d" | format(i) }}</a>
+{% endfor %}
+</footer>
